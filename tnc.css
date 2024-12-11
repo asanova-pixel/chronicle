@@ -1,0 +1,114 @@
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--blue-whale);  /* Set text color to --blue-whale */
+  background-color: whitesmoke; /* white smoke background */
+  height: 100vh; /* Ensure the body takes full screen height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Colors */
+:root {
+  --blue-whale: #042E4C;
+  --jungle-green: #315527;
+  --outrageous-tango-orange: #ff6e4a;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Space between logo and name */
+  padding: 15px 20px; 
+  background-color: #f0f0f0; /* Light grey background */
+  color: var(--blue-whale);
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 38px; /* Reduced image size */
+  height: 38px;
+  margin-right: 8px;
+  margin-left: 10px;
+}
+
+.header h1 {
+  font-size: 1.8em;
+  margin: 0;
+  color: var(--blue-whale); 
+}
+
+/* Horizontal line styling */
+.separator {
+  border: none;
+  border-top: 2px solid grey; /* Line color */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+/* Main Section */
+main {
+  padding: 15px 20px;  /* Reduced padding */
+  flex: 1; /* Ensure main takes the available space */
+  overflow: hidden;  /* Hide overflow */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Terms and Conditions Content */
+.terms-content {
+  margin: 20px auto;
+  max-width: 1000px; /* Limit width to ensure readability */
+  padding: 15px;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  height: 60vh;  /* Limit height to 60% of the viewport height */
+  overflow-y: auto;  /* Enable vertical scrolling */
+}
+
+.terms-content h2 {
+  color: var(--jungle-green); /* Jungle Green for title */
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.terms-content h3 {
+  color: var(--blue-whale); /* Blue Whale for section headings */
+  font-size: 1.5em;
+  margin-top: 25px;
+}
+
+.terms-content p {
+  color: var(--blue-whale);
+  font-size: 1.1em;
+  line-height: 1.6; /* Maintain good readability */
+  margin-bottom: 12px; /* Add consistent spacing between paragraphs */
+  text-align: justify; /* Align text to justify */
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 15px 20px; 
+  background-color: #f0f0f0; /* Light grey background */
+  color: var(--blue-whale); /* Footer background color */
+}
+
+.footer a {
+  color: var(--outrageous-tango-orange); /* Link color */
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

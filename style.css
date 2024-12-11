@@ -1,0 +1,194 @@
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--blue-whale);  /* Set text color to --blue-whale */
+  background-color: whitesmoke; /* white smoke background */
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+/* Colors */
+:root {
+  --blue-whale: #042E4C;
+  --jungle-green: #315527;
+  --outrageous-tango-orange: #ff6e4a;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Space between logo and name */
+  padding: 10px;
+  background-color: #f0f0f0; /* Light grey background */
+  color: var(--blue-whale);
+  flex-shrink: 0; /* Prevent shrinking */
+  width: 100%; /* Full width */
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 38px; /* Reduced image size */
+  height: 38px;
+  margin-right: 8px;
+  margin-left: 10px;
+  border-radius: 8px;
+}
+
+.header h1 {
+  font-size: 1.8em;
+  margin: 0;
+  color: var(--blue-whale);
+}
+
+/* Horizontal line styling */
+.separator {
+  border: none;
+  border-top: 1px solid grey; /* Line color */
+  margin: 5px 0; /* Smaller margin for compact spacing */
+}
+
+/* Main Section */
+main {
+  flex-grow: 1; /* Take up remaining vertical space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 15px;
+  width: 100%; /* Full width */
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.welcome-section h2 {
+  color: var(--jungle-green); /* Jungle Green for heading */
+  font-size: 2em;
+  margin-bottom: 6px;
+}
+
+.welcome-section p {
+  color: var(--blue-whale);
+  font-size: 1.1em;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+/* Carousel Section */
+.carousel-container {
+  width: 100%; /* Make the container span the full width of the page */
+  margin: 0 auto; /* Center the container */
+  background-color: #f0f0f0; /* Optional: Add a background color */
+  display: flex; /* Center content inside the carousel */
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-inner img {
+  width: 33%;  /* Reduce image width to 80% of the container */
+  height: auto;  /* Maintain aspect ratio */
+  margin: 0 auto;  /* Center the image horizontally */
+  display: block;  /* Ensure the image behaves as a block element to apply margin */
+  object-fit: contain; /* Ensure the image fits within its container */
+}
+
+/* Carousel Controls */
+.carousel-control {
+  color: var(--blue-whale); /* Default color */
+  border-color: var(--blue-whale); /* Border color when inactive */
+  background-color: #f0f0f0; /* Light grey background for the controls */
+  border-radius: 8px;  /* Optional: Make the control circular */
+  padding: 4px;  /* Add padding to increase button size */
+  width: 60px;  /* Set a specific width for the control */
+  font-size: 14px;  /* Adjust font size to fit the new button size */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;  /* Smooth transition */
+}
+
+.carousel-control:hover {
+  color: var(--outrageous-tango-orange); /* Hover effect color */
+  background-color: #e0e0e0; /* Slightly darker grey when hovered */
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  color: var(--outrageous-tango-orange); /* Right control active color */
+  font-size: 20px;  /* Adjust size of left/right controls for clarity */
+}
+
+.carousel .carousel-indicators li {
+  width: 8px; /* Smaller indicators */
+  height: 8px;
+  background-color: var(--outrageous-tango-orange);
+}
+
+.carousel .carousel-indicators .active {
+  background-color: var(--outrageous-tango-orange);  /* Active indicator color */
+}
+
+/* Optional: Hover effect for indicators */
+.carousel-indicators li:hover {
+  background-color: var(--blue-whale);  /* Hover color */
+}
+
+/* Features Section */
+.features-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.feature {
+  width: 30%;
+  text-align: center;
+  border: 1px solid var(--blue-whale); /* Added border around each feature */
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #ffffff; /* White background for features */
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  color: var(--jungle-green);
+  margin-bottom: 6px;
+}
+
+.feature p {
+  color: var(--blue-whale);
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0; /* Light grey background */
+  color: var(--blue-whale); /* Footer background color */
+  flex-shrink: 0; /* Prevent shrinking */
+  width: 100%; /* Full width */
+}
+
+.footer a {
+  color: var(--outrageous-tango-orange); /* Link color */
+  text-decoration: none;
+  margin-top: 5px;
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
